@@ -164,7 +164,8 @@
             android:label="@string/me_section_screen_title" />
         <activity
             android:name=".ui.accounts.LoginActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">
@@ -181,6 +182,8 @@
 
         <activity
             android:name=".ui.accounts.applicationpassword.ApplicationPasswordLoginActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">
@@ -507,6 +510,8 @@
             android:name="org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverActivity"
             android:theme="@style/WordPress.NoActionBar"
             android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
             android:exported="true">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
@@ -923,6 +928,7 @@
             android:name=".ui.ShareIntentReceiverActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
+            android:taskAffinity=""
             android:theme="@style/NoDisplay"
             android:exported="true">
             <intent-filter>
@@ -940,8 +946,10 @@
         <activity
             android:name=".ui.AddQuickPressShortcutActivity"
             android:label="@string/quickpress_shortcut_activity_label"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
             android:theme="@style/WordPress.NoActionBar"
-            android:exported="true"
+            android:exported="false"
             tools:ignore="ManifestResource">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />

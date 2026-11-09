@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_large"
             android:hint="@string/support_identity_input_dialog_email_label"
-            android:inputType="textEmailAddress"
+            android:inputType="textEmailAddress|textNoSuggestions"
             android:textAppearance="?attr/textAppearanceBody2" />
 
     </com.google.android.material.textfield.TextInputLayout>
