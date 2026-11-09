@@ -27,8 +27,8 @@ import org.wordpress.android.util.AppLog
 import org.wordpress.android.util.DisplayUtils
 import org.wordpress.android.util.StringUtils
 import java.lang.ref.WeakReference
+import java.security.SecureRandom
 import java.text.Bidi
-import java.util.Random
 import java.util.regex.Pattern
 
 /**
@@ -372,7 +372,7 @@ class ReaderPostRenderer(
         val renderAsTiledGallery = hasTiledGallery && isWideDisplay
 
         // unique CSS class assigned to the gallery elements for easy selection
-        val galleryOnlyClass = "gallery-only-class" + Random().nextInt(RANDOM_BOUND)
+        val galleryOnlyClass = "gallery-only-class" + SecureRandom().nextInt(RANDOM_BOUND)
         val str = if (isRTL(content)) {
             "<!DOCTYPE html><html dir='rtl' lang=''><head><meta charset='UTF-8' />"
         } else {

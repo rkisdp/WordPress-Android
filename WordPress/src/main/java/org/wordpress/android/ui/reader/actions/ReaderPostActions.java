@@ -44,14 +44,14 @@ import org.wordpress.android.util.JSONUtils;
 import org.wordpress.android.util.UrlUtils;
 import org.wordpress.android.util.VolleyUtils;
 
+import java.security.SecureRandom;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 public class ReaderPostActions {
     private static final String TRACKING_REFERRER = "https://wordpress.com/";
-    private static final Random RANDOM = new Random();
+    private static final SecureRandom RANDOM = new SecureRandom();
 
     private static final int NUM_RELATED_POSTS_TO_REQUEST = 2;
 

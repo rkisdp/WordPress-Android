@@ -103,7 +103,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/first_name"
                         android:imeOptions="actionNext"
-                        android:inputType="textPersonName"
+                        android:inputType="textPersonName|textNoSuggestions"
                         tools:ignore="HardcodedText"
                         tools:text="John" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -116,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/last_name"
                         android:imeOptions="actionNext"
-                        android:inputType="textPersonName"
+                        android:inputType="textPersonName|textNoSuggestions"
                         tools:text="Smith" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/email"
                         android:imeOptions="actionNext"
-                        android:inputType="textEmailAddress"
+                        android:inputType="textEmailAddress|textNoSuggestions"
                         tools:text="email@wordpress.com" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -151,7 +151,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/domain_contact_information_country_code_hint"
                         android:imeOptions="actionNext"
-                        android:inputType="number"
+                        android:inputType="number|textNoSuggestions"
                         android:maxLength="3"
                         tools:text="44" />
 
@@ -165,7 +165,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/domain_contact_information_phone_number_hint"
                         android:imeOptions="actionNext"
-                        android:inputType="number"
+                        android:inputType="number|textNoSuggestions"
                         tools:text="3127924444" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -190,7 +190,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/domain_contact_information_address_hint"
                         android:imeOptions="actionNext"
-                        android:inputType="textPostalAddress" />
+                        android:inputType="textPostalAddress|textNoSuggestions" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -202,7 +202,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/domain_contact_information_address_hint_two"
                         android:imeOptions="actionNext"
-                        android:inputType="textPostalAddress" />
+                        android:inputType="textPostalAddress|textNoSuggestions" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -214,7 +214,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/domain_contact_information_city_hint"
                         android:imeOptions="actionNext"
-                        android:inputType="textPostalAddress" />
+                        android:inputType="textPostalAddress|textNoSuggestions" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <RelativeLayout
@@ -258,7 +258,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/domain_contact_information_postal_code_hint"
                         android:imeOptions="actionNext"
-                        android:inputType="textPostalAddress" />
+                        android:inputType="textPostalAddress|textNoSuggestions" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
